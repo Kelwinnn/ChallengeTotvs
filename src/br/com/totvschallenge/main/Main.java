@@ -1,5 +1,7 @@
 package br.com.totvschallenge.main;
 
+import br.com.totvschallenge.entities.Usuario;
+
 import java.util.Scanner;
 
 public class Main {
@@ -21,6 +23,16 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        System.out.println("===== Cadastro de usuário =====");
+        Usuario user = new Usuario(
+                lerString("Insira o nome de usuário:"),
+                lerString("Insira o seu email: "),
+                lerString("Insira sua senha:")
+        );
 
+
+        while(true){
+
+        }
     }
 }

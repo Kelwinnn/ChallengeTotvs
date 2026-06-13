@@ -35,16 +35,4 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public void logar(String nome, String email, String senha){
-        while(true) {
-            if (!nome.equalsIgnoreCase(getNome())) {
-                continue;
-            } else if (!email.equalsIgnoreCase(getSenha())) {
-                continue;
-            } else if(!senha.equalsIgnoreCase(getSenha())){
-                continue;
-            }
-            break;
-        }
-    }
 }
